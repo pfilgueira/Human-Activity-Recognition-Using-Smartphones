@@ -76,6 +76,35 @@ $\$4,000$ for B.
 }
 \end{frame}
 
+
+
+
+\begin{frame}
+\[ \mbox{Introduction to Probability}\]
+
+
+\LARGE
+\[ \mbox{Introduction to Probability}\]
+\[ \mbox{Twitter: @StatsLabDublin}\]
+\end{frame}
+%----------------------------------------------------------%
+%Page 29
+\begin{frame}
+In how many ways can a group of four people be selected from three men and four women?
+In how many of these groups are there more women than men?
+\end{frame}
+%----------------------------------------------------------%
+\begin{frame}
+\frametitle{Selecting A Committee}
+\begin{itemize}
+\item Firstly - we know that there are 7 people to choose from altogether.
+\item From these seven people, we have to choose four people.
+\end{itemize}
+\[ {7 \choose 4} = \frac{7!}{4! \times (7-4)!} \]
+\end{frame}
+
+
+%----------------------------------------------------------%
 \end{document}
 
 Cx=	75	;	Cy=	40
