@@ -1,0 +1,84 @@
+CHAPTER 3. LOGIC 43
+are two general methods for tackling this type of problem; they are illustrated in the following two
+examples.
+Example 3.15 We use truth tables to simplify w : (p A ··q) V (p /\ q).
+1 or z>A··q rw (1>A—¤1)V(rAq)
+O O 1 0 O 0 _
+0 1 O O 0 O
+1 0 1 1 0 1
+1 1 O O 1 1
+From the table, we see that the column for the output in :-. (p A —¤q) V (p A q) is identical to the
+column for p. Hence this network can be replaced by the input p, and no input q or gates are
+necessary. El
+Exzunple 3.16 `We use the laws of logic to simplify the expression for the final output w ;
+(P/\rq)V(1>Aq)·
+First note that we have “pA(something)" in both brackets, By the distributive law, we can take
+“p/\" out of these brackets as "a common facto1·" and write: _
+(ZJ/\o¢1)V(1¤Aq) :1*/\(‘·<1 VQ)-
+Now (··q V q) : (q V ·¤q) : T, by the commutative law and the complement law. Thus
+A w = p A T.
+However, p /\ T : p, by the identity law. Hence we obtain w : p, as in the previous example. D
+3.5 Exercises 3
+l. The following propositions relate to a 3-bit binary string s.
+pz Only one bit ofs is 0.
+qa The first two bits ofs are the same.
+Find the truth set for each of the following statements:
+r; q; PM; PV¢1·
+2. Let p, q denote the following propositions concerning an integer n.
+p:n$50; q: 222}.0.
+Express in words, as simply as you can, the following statements as conditions ou 11.
+rip; r/M1: *(··<1); ··2¤V—q·
+3, Let p, q be the following propositions.
+pz This book is on Databases.
+q: This bool: is on Programming.
+Express each of the following cornpoundstatements symbolically in TWO different ways:
+(a) This book is not on Databases or Programming.
+(b) This book is not on Databases and Programming.
+4. Use truth tables to prove that (p A q) V (-·pA q) : q. (Hint: you will need to construct
+columns for p, q and p A q,-·p, —·pA q, (p A q) V (—·pA q). Remember to make a comment at
+the end to say why the table proves that the two statements are logically equivalent.)
+
+CHAPTER 3. LOGIC 44
+5. Construct a truth table for each ofthe following compound statements and hence find simpler
+propositions to which each is equivalent.
+(a)p\/F; (b)p/\T.
+6. Let pi 9, r be the following propositions concerning an integer n.
+pz n : 20; q: rz is even; ra n is positive.
+Express each of the following conditional statements symbolically, using the symbol —>.
+(aj If rr : 20, then n is positive.
+(b) n is even if n : 20.
+(c) n : 20 only if n is even.
+T. Let q and r be the propositions defined in the previous exercise. Complete the following table
+by giving the truth value of each ofthe statements q, r. q —> r, r· —·> q and q 4-+ r corresponding
+to each value of n.
+n n 1* q-·>r· r-—·>q q<—>T
+-8
+-3
+10
+lT
+8. Use truth tables to prove that -·p 4-+ ··»q is logically equivalent to p e·> q.
+Q. Write the contrapositive of each of the following statements.
+(a) li` n : 12, then n is divisible by 3.
+(b) lf rr : 5, then rz is positive.
+(c) lf the quadrilateral is a square, then its four sides are equal.
+l0. The basis for logical argument is that given propositions p,q, r such that p imples q and q
+implies r, then we can deduce that p implies r. The validity of this argument depends upon
+the fact that the statement [(11 ··> q) /\ (q —> r)] -+ (p —> r) is always true, that is, it is a
+tautology.
+Construct a truth table with columns for p,q, r and p -> q,q ·—> r, (p —> q) /\ (q —> r),p —>
+r, Kp —-> q) /\ (q -->   —> (p -—> r). Hence prove that
+l(r>—+·1)/\(<1—>r)] —> (r¤—>r)
+is indeed a tautology.
+ll. The following logic network accepts inputs p and q, which may each independently have the
+value O or l.
+P   ?
+I1. »
+‘? ..4T
+Q D
+(aj Copy the network and label each of the gates appropriately with one of the words
+“NOT”, “AND” or "OR”. Label the diagram also with a symbolic expression for the
+output from each gate.
+(b) Construct a logic table to show the value of the output corresponding to each combina»
+tion of values (O or 1) for the inputs p and q.
+[c] Find a simpler expression that is logically equivalent to the final output,
+
