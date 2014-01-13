@@ -1,6 +1,8 @@
-Suppose a gambler is playing a simple coin flip game. The gambler does not know that the coin has been tampered with such that the probability of a Head is 47\%.
+Suppose a gambler is playing a simple coin flip game. 
+The gambler does not know that the coin has been tampered with such that the probability of a Head is 47\%.
 
-Suppose the gamble plays this coin flip game nine times. What is the probability that he wins precisely 3 times.
+Suppose the gamble plays this coin flip game nine times. 
+What is the probability that he wins precisely 3 times.
 %----------------------------------------------%
 
 \section{Poisson Distribution}
