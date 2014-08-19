@@ -22,10 +22,69 @@
 Poisson/Binomial/Exponential
 
 \begin{itemize}
-\item  Find P(X=0) for Poisson Mean (m=0.5)
+\item  Poisson
+
+Find P(X=0) for Poisson Mean (m=0.5)
 
 
 \[ P(X=0) = \frac{e^{-0.5}}{0!}  = 0.606 \]
+
+
+%=================%
+\item Binomial
+
+\[ { 3 \choose 1} \times (0.606)^2 times (1-0.606)^1 \]
+
+= 0.434
+
+%=================%
+\item Exponential
+
+No Claim in the next two years
+= (0.606)^2 = 0.368
+
+Time Until Next Claim
+
+$\muT = 0.5$
+
+$T \sim (exp(0.5)$
+
+$P(XT >2) = exp(-1) = 0.368$
+
+\end{itemize}
+%============================================%
+% PMS Spring 2008 Question 4 - Probability
+
+Consider Two events A, B such that
+
+\begin{itemize}
+\item P(A) = 0.3
+\item P(A \cap B) = 0.1
+\end{itemize}
+
+Find the minimum possible value of $P(A|B)$
+
+\[ P(A|B) = \frac{P(A \cup B) }{P(B)}\]
+
+\begin{itemize}
+\item P(A \cup B) Maximum = 1
+\item P(A \cup B) Minimum = 0.3
+\end{itemize}
+
+\subsection*{Minimum}
+
+\[ P(A \cup B) = P(A) + P(B) - P(A \cap B)\]
+\[ 0.3 = 0.3 + P(B) - 0.1 \]
+\[ P(B) = 0.1\] 
+
+\subsection*{Maximum}
+
+\[ P(A \cup B) = P(A) + P(B) - P(A \cap B)\]
+\[ 1 = 0.3 + P(B) - 0.1 \]
+\[P(B) = 0.8\]
+
+\[ P(A|B)_{MIN} = \frac{P(A \cup B) }{P(B)} = \frac{0.1}{0.8} = 0.125 \]
+\[ P(A|B)_{MAX} = \frac{P(A \cup B) }{P(B)} = \frac{0.1}{0.1} = 1 \]
 %============================================%
 % PMS SPring 2006 Question 5
 \section{Poisson Approximation}
