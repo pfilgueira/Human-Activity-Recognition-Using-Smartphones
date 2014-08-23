@@ -17,6 +17,47 @@
 \item	Conditional Expectations and Compound Distributions
 \end{enumerate}	
 
+
+
+The table below gives the number of thunderstorms reported in a particular summer
+month by 100 meteorological stations.
+
+Number of thunderstorms: &0& 1 &2 &3 &4 &5 \\ \hline
+Number of stations: & 22 & 37 & 20 & 13 & 6 & 2 \\ \hline
+
+\begin{itemize}
+\item[(a)] Calculate the sample mean number of thunderstorms.
+\item[(b)] Calculate the sample median number of thunderstorms.
+\item[(c)] Comment briefly on the comparison of the mean and the median.
+\end{itemize}
+%------------------------------------------------%
+% 12 Normal Approximation of Binomial
+% PMS April 2006 
+In a certain large population 45\% of people have blood group A. 
+A random sample of 300 individuals is chosen from this population.
+Calculate an approximate value for the probability that more than 115 of the sample
+have blood group A.
+
+If X is the number in the sample with group A, then X has a binomial (300, 0.45)
+distribution, so
+\[ E[X] = 300 \times 0.45 = 135 \] and 
+\[ Var[X] = 300 \times 0.45 \times 0.55 = 74.25 \].
+Then, using the continuity correction,
+
+\[ P(X > 115) = P(X > 115.5)\]
+\[ 1- \frac{115.5 - 135}{\sqrt{74.25} } \]
+%-----------%
+September 2006 Question 6
+It is assumed that claims arising on an industrial policy can be modelled as a Poisson
+process at a rate of 0.5 per year.
+(i) Determine the probability that no claims arise in a single year. [1]
+(ii) Determine the probability that, in three consecutive years, there is one or more
+claims in one of the years and no claims in each of the other two years. [2]
+(iii) Suppose a claim has just occurred. Determine the probability that more than
+two years will elapse before the next claim occurs. [2]
+[Total 5]
+\[  P(X > 115.5) = 1 -\theta(-2.26) = \theta(2.26) = 0.99\]
+
 %=========================================================% 
 % PMS Autumn 2008 Question 1
 The mean of a sample of 30 claims is \$5,200.
