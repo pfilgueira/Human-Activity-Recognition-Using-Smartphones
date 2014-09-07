@@ -1,0 +1,592 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{natbib}
+\usepackage{vmargin}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{subfigure}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsthm, amsmath}
+%\usepackage[dvips]{graphicx}
+
+\renewcommand{\baselinestretch}{1.8}
+
+% left top textwidth textheight headheight % headsep footheight footskip
+\setmargins{3.0cm}{2.5cm}{15.5 cm}{23.5cm}{0.5cm}{0cm}{1cm}{1cm}
+
+\pagenumbering{arabic}
+
+
+\begin{document}
+\author{Kevin O'Brien}
+\tableofcontents
+
+\subsection{Example}
+Find $h(t)$ when $h(t) = f*g(t)$, with $f(t)= t$ and $g(t)=
+t^2$.\newline
+
+\begin{eqnarray}
+f(t) = t \quad \Leftrightarrow \quad F(S)= \frac{1}{S^2}
+ \nonumber\\
+g(t) = t^2 \quad \Leftrightarrow \quad G(S)= \frac{2}{S^3}
+ \nonumber\\
+H(S) = F(S)\times G(S) = \frac{2}{S^5}
+ \nonumber\\
+(H(S) \mbox{ is in form }  k\frac{n!}{S^{n+1}} )
+ \nonumber
+\end{eqnarray}
+
+With $n=4$, $n!= 4! = 24$. Solving for $k$, $k \times n! = 2$.
+Therefore $k=\frac{1}{12}$. The solution is $\cal{L}^{-1}[H(S)]$
+
+\section{Period of a trigonomteric function}
+Period of a function is denoted $2l$. (Sometimes it is denoted as
+$L$, with $L=2l$). \newline When given a trigonometric function in
+form $f(t) = Cos(kx)$ or $f(t)= Sin(kx)$, the period of the
+function can be calculated as follows:
+
+\begin{eqnarray}
+2l = \frac{2 \pi}{k}\nonumber
+\end{eqnarray}
+
+
+\subsection{Example}
+\begin{eqnarray}f(t) = Cos(\frac{2 \pi x}{3}) \nonumber\\
+2l \quad=\frac{2\pi}{(\frac{2\pi}{3})}\quad =
+\frac{1}{(\frac{1}{3})}\quad= \textbf{3}\nonumber
+\end{eqnarray}
+
+\subsection{Example}
+\begin{eqnarray}f(t) = Sin(\frac{5x}{2}) \nonumber\\
+2l \quad=\frac{2\pi}{(\frac{5}{2})}\quad = \frac{4\pi}{5}\nonumber
+\end{eqnarray}
+\section{Curl}
+In vector calculus, the curl is a vector operator that describes the infinitesimal rotation of a 3-dimensional vector field. At every point in the field, the curl of that field is represented by a vector. The attributes of this vector (length and direction) characterize the rotation at that point.
+%--------------------------------------------------%
+\section{Laplacian Operator}
+\[\Delta f = \nabla^2 f = \nabla \cdot \nabla f\]
+
+%--------------------------------------------------%
+\section{Notation}
+\[ \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+{\frac{\partial}{\partial x}} & {\frac{\partial}{\partial y}} & {\frac{\partial}{\partial z}} \\
+ F_x & F_y & F_z \end{vmatrix}\]
+
+\[\left(\frac{\partial F_z}{\partial y}  - \frac{\partial F_y}{\partial z}\right) \mathbf{i} + \left(\frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x}\right) \mathbf{j} + \left(\frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y}\right) \mathbf{k}\]
+
+ %--------------------------------------------------%
+\section{Example}
+\[f(x,y,z)= \ 2x+3y^2-\sin(z)\]
+
+\[ \nabla f=
+\frac{\partial f}{\partial x} \mathbf{i} +
+\frac{\partial f}{\partial y} \mathbf{j} +
+\frac{\partial f}{\partial z} \mathbf{k}
+ = 2\mathbf{i}+ 6y\mathbf{j} -\cos(z)\mathbf{k}\]
+
+\section{Stoke's Theorem}
+\[
+\iint_{\Sigma} \nabla \times \mathbf{F} \cdot d\mathbf{\Sigma} = \oint_{\partial\Sigma} \mathbf{F} \cdot d \mathbf{r}, \]
+
+\section{Laplace Transforms }
+If $g(t)=k \times f(t)$ then $G(S) = k \times F(S)$ where $k$ is a
+constant. $\mathcal{f(t)}=F(S)$.
+\begin{eqnarray}
+f(t) &=& (t+1)^2\\
+&=& t^2 +2t +1 \nonumber
+\end{eqnarray}
+
+\section{Inverse Laplace Transforms 2}
+
+The denominator has form $S^2 - 2aS + a^2 + k$ which is equivalent
+to $(S-a)^2 + k$. Therefore $G(S)$ will have form $F(S-a)$
+\newline
+The function $G(S)$ may have the form $\frac{S+D}{S^2 +(C+D)S +
+CD}$, where C and D are constants. This expression simplifies
+$\frac{S+D}{(S+C)(S+D)}$ and again to $\frac{1}{S+C}$. The inverse
+laplace transform $g(t)$ can be easily determined.
+\section{Convolution}
+We are asked to find a function h(t) which is the convolution of
+two given functions $f(t)$ and $g(t)$. i.e $h(t)=h*g(t)$.\newline
+Importantly $H(S) = F(S)\times G(S)$. We determine the laplace
+transforms, F(S) and G(S), and multiply them to determine H(S). We
+then find the inverse Laplace transform of H(S) to yield our
+solution.
+\subsection{Example}
+Find $h(t)$ when $h(t) = f*g(t)$, with $f(t)= e^{t}$ and $g(t)=
+e^{-t}$.\newline
+
+\begin{eqnarray}
+f(t) = e^{t} \quad \Leftrightarrow \quad F(S)= \frac{1}{S-1}
+ \nonumber\\
+g(t) = e^{-t} \quad \Leftrightarrow \quad G(S)= \frac{1}{S+1}
+ \nonumber\\
+H(S) = F(S)\times G(S) = \frac{1}{(S-1)(S+1)}
+ \nonumber
+\end{eqnarray}
+
+\subsection*{Partial Differentiation}
+ \[\frac{\partial f}{\partial x}\]
+
+\[z = f(x, y) = \,\! x^2 + xy + y^2.\]
+\[\frac{\partial z}{\partial x} = 2x+y\]
+\[\frac{\partial z}{\partial x} = 3\]
+\section{Laplace Transforms Using 1st Shifting Theorem}
+\begin{eqnarray}
+ g(t) = e^{at}f(t) \quad \Leftrightarrow \quad G(S)= F(S-a) \nonumber
+\end{eqnarray}
+The function $g(t)$ is presented in a form whereby $a$ and $f(t)$
+are easily identifiable. First determine $F(S)$ by finding the
+Laplace transform of $f(t)$. Then replace all $S$ terms with
+$S-a$.
+
+\section{Laplace Transforms Using 2nd Shifting Theorem}
+
+\begin{eqnarray}
+ g(t) = u^{a}f(t-a) \quad \Leftrightarrow \quad G(S)= e^{-aS}F(S) \nonumber
+\end{eqnarray}
+The function $g(t)$ is presented in a form whereby $a$ and
+$f(t-a)$ are easily identifiable. ($U_{a}(t)$ is called the unit
+step function). First determine $f(t)$ by replace all $t-a$ terms
+in $f(t-a)$ with $t$. Then calculate the laplace transform of
+$f(t)$ i.e. $F(S)$. The solutions is in form $G(S)= e^{-aS}F(S)$.
+
+\section{Inverse Laplace Transforms (2 questions) }
+Partial fraction expansion is used in questions 4 and 5.
+
+
+\section{Even and Odd Function}
+Even Functions: $Cos(X)$ ,$|X|$ (i.e absolute value of $X$) and
+$X^2$, $X^4$ etc
+\newline
+Odd Functions: $Sin(X)$, $X$, $X^3$ etc
+\\
+Functions that are products of two even functions are also
+\textbf{even} functions.
+\newline
+Functions that are products of two odd functions are
+\textbf{even} functions. (e.g $X \times X^3 = X^4$)
+\newline
+Functions that are products of an even function and an
+odd function are \textbf{odd} functions.
+\section{Fourier Series - determining the arguments}
+Given a period $2l$, we must determine the form of the fourier
+series. $sin( \frac{n x \pi}{l})$
+\section{Fourier Series}
+X
+
+MA4005 Syllabus
+\begin{itemize}
+\item Functions of several variables and partial differentiation.
+\item The indefinite integral. Integration techniques: of standard functions, by substitution, by parts and using partial fractions.
+\item The definite integral. Finding areas, lengths, surface areas, volumes, and moments of inertial.
+\item Numerical integration: trapezoidal rule, Simpson's rule.
+\item Ordinary differential equations.
+\item First order including linear and separable. Linear second order equations with constant coefficients.
+\item Numerical solution by Runge-Kutta. The Laplace transform: tables and theorems and solution of linear ODEs.
+\item Fourier series: functions of arbitary period, even and odd functions, half-range expansions.
+\item Application of Fourier series to solving ODEs.
+\item Matrix representation of and solution of systems of linear equations.
+\item Matrix algebra: invertibility, determinants.
+\item Vector spaces: linear independence, spanning, bases, row and column spaces, rank.
+\item Inner products: norms, orthogonanality. Eigenvalues and eignenvectors.
+\item Numerical solution of systems of linear equations. Gauss elimination, LU decomposition, Cholesky decomposition,
+iterative methods. Extension to non-linear systems using Newton's method.
+\end{itemize}
+%-------------------------------%
+\subsection{convolution}
+
+\[ (f * g)(t) = \int_0^t f(\tau)g(t-\tau)\,d\tau= F(s) \cdot G(s) \]
+
+
+
+\section{Laplace Transforms Using 1st Shifting Theorem}
+\begin{eqnarray}
+ g(t) = e^{at}f(t) \quad \Leftrightarrow \quad G(S)= F(S-a) \nonumber
+\end{eqnarray}
+The function $g(t)$ is presented in a form whereby $a$ and $f(t)$
+are easily identifiable. First determine $F(S)$ by finding the
+Laplace transform of $f(t)$. Then replace all $S$ terms with
+$S-a$.
+
+\section{Laplace Transforms Using 2nd Shifting Theorem}
+
+\begin{eqnarray}
+ g(t) = u^{a}f(t-a) \quad \Leftrightarrow \quad G(S)= e^{-aS}F(S) \nonumber
+\end{eqnarray}
+The function $g(t)$ is presented in a form whereby $a$ and
+$f(t-a)$ are easily identifiable. ($U_{a}(t)$ is called the unit
+step function). First determine $f(t)$ by replace all $t-a$ terms
+in $f(t-a)$ with $t$. Then calculate the laplace transform of
+$f(t)$ i.e. $F(S)$. The solutions is in form $G(S)= e^{-aS}F(S)$.
+
+\section{Inverse Laplace Transforms (2 questions) }
+Partial fraction expansion is used in questions 4 and 5.
+\section{Inverse Laplace Transforms 2}
+
+The denominator has form $S^2 - 2aS + a^2 + k$ which is equivalent
+to $(S-a)^2 + k$. Therefore $G(S)$ will have form $F(S-a)$
+\newline
+The function $G(S)$ may have the form $\frac{S+D}{S^2 +(C+D)S +
+CD}$, where C and D are constants. This expression simplifies
+$\frac{S+D}{(S+C)(S+D)}$ and again to $\frac{1}{S+C}$. The inverse
+laplace transform $g(t)$ can be easily determined.
+\section{Convolution}
+We are asked to find a function h(t) which is the convolution of
+two given functions $f(t)$ and $g(t)$. i.e $h(t)=h*g(t)$.\newline
+Importantly $H(S) = F(S)\times G(S)$. We determine the laplace
+transforms, F(S) and G(S), and multiply them to determine H(S). We
+then find the inverse Laplace transform of H(S) to yield our
+solution.
+\subsection{Example}
+Find $h(t)$ when $h(t) = f*g(t)$, with $f(t)= e^{t}$ and $g(t)=
+e^{-t}$.\newline
+
+\begin{eqnarray}
+f(t) = e^{t} \quad \Leftrightarrow \quad F(S)= \frac{1}{S-1}
+ \nonumber\\
+g(t) = e^{-t} \quad \Leftrightarrow \quad G(S)= \frac{1}{S+1}
+ \nonumber\\
+H(S) = F(S)\times G(S) = \frac{1}{(S-1)(S+1)}
+ \nonumber
+\end{eqnarray}
+\subsection{Example}
+Find $h(t)$ when $h(t) = f*g(t)$, with $f(t)= t$ and $g(t)=
+t^2$.\newline
+
+\begin{eqnarray}
+f(t) = t \quad \Leftrightarrow \quad F(S)= \frac{1}{S^2}
+ \nonumber\\
+g(t) = t^2 \quad \Leftrightarrow \quad G(S)= \frac{2}{S^3}
+ \nonumber\\
+H(S) = F(S)\times G(S) = \frac{2}{S^5}
+ \nonumber\\
+(H(S) \mbox{ is in form }  k\frac{n!}{S^{n+1}} )
+ \nonumber
+\end{eqnarray}
+
+With $n=4$, $n!= 4! = 24$. Solving for $k$, $k \times n! = 2$.
+Therefore $k=\frac{1}{12}$. The solution is $\cal{L}^{-1}[H(S)]$
+
+\section{Period of a trigonomteric function}
+Period of a function is denoted $2l$. (Sometimes it is denoted as
+$L$, with $L=2l$). \newline When given a trigonometric function in
+form $f(t) = Cos(kx)$ or $f(t)= Sin(kx)$, the period of the
+function can be calculated as follows:
+
+\begin{eqnarray}
+2l = \frac{2 \pi}{k}\nonumber
+\end{eqnarray}
+
+
+\subsection{Example}
+\begin{eqnarray}f(t) = Cos(\frac{2 \pi x}{3}) \nonumber\\
+2l \quad=\frac{2\pi}{(\frac{2\pi}{3})}\quad =
+\frac{1}{(\frac{1}{3})}\quad= \textbf{3}\nonumber
+\end{eqnarray}
+
+\subsection{Example}
+\begin{eqnarray}f(t) = Sin(\frac{5x}{2}) \nonumber\\
+2l \quad=\frac{2\pi}{(\frac{5}{2})}\quad = \frac{4\pi}{5}\nonumber
+\end{eqnarray}
+
+\section{Even and Odd Function}
+Even Functions: $Cos(X)$ ,$|X|$ (i.e absolute value of $X$) and
+$X^2$, $X^4$ etc
+\newline
+Odd Functions: $Sin(X)$, $X$, $X^3$ etc
+\\
+Functions that are products of two even functions are also
+\textbf{even} functions.
+\newline
+Functions that are products of two odd functions are
+\textbf{even} functions. (e.g $X \times X^3 = X^4$)
+\newline
+Functions that are products of an even function and an
+odd function are \textbf{odd} functions.
+\section{Fourier Series - determining the arguments}
+Given a period $2l$, we must determine the form of the fourier
+series. $sin( \frac{n x \pi}{l})$
+\section{Fourier Series}
+X
+
+\newpage
+\subsection*{Trigonometric Subsititution}
+\[\int\frac{dx}{\sqrt{a^2-x^2}}\]
+
+\[x=a\sin(\theta),\quad dx=a\cos(\theta)\,d\theta, \quad \theta=\arcsin\left(\frac{x}{a}\right)\]
+
+{\large
+\begin{eqnarray}
+\int\frac{dx}{\sqrt{a^2-x^2}} & = \int\frac{a\cos(\theta)\,d\theta}{\sqrt{a^2-a^2\sin^2(\theta)}}\\ \nonumber &= \int\frac{a\cos(\theta)\,d\theta}{\sqrt{a^2(1-\sin^2(\theta))}} \\ \nonumber
+& = \int\frac{a\cos(\theta)\,d\theta}{\sqrt{a^2\cos^2(\theta)}} \\ &= \int d\theta=\theta+C \\ \nonumber &=\arcsin\left(\frac{x}{a}\right)+C
+\end{eqnarray}
+}
+\subsection{Partial Derivatives: Volume of a Cone}
+
+The volume ''V'' of a cone depends on the cone's height ''h'' and its radius 'r' according to the formula
+\[V(r, h) = \frac{\pi r^2 h}{3}.\]
+The partial derivative of ''V'' with respect to 'r' is
+\[\frac{ \partial V}{\partial r} = \frac{ 2 \pi r h}{3},\]
+
+which represents the rate with which a cone's volume changes if its radius is varied and its height is kept constant.
+The partial derivative with respect to ''h'' is
+\[\frac{ \partial V}{\partial h} = \frac{\pi r^2}{3},\]
+
+which represents the rate with which the volume changes if its height is varied and its radius is kept constant.
+\section{Curl}
+In vector calculus, the curl is a vector operator that describes the infinitesimal rotation of a 3-dimensional vector field. At every point in the field, the curl of that field is represented by a vector. The attributes of this vector (length and direction) characterize the rotation at that point.
+%--------------------------------------------------%
+\section{Laplacian Operator}
+\[\Delta f = \nabla^2 f = \nabla \cdot \nabla f\]
+
+\subsection*{Trapezoidal Rule}
+\[\int_{a}^{b} f(x)\, dx \approx (b-a)\frac{f(a) + f(b)}{2}\]
+
+%-------------------------------%
+\subsection*{Laplacian Analysis: convolution}
+
+\[ (f * g)(t) = \int_0^t f(\tau)g(t-\tau)\,d\tau= F(s) \cdot G(s) \]
+
+
+%--------------------------------------------------%
+\section{Notation}
+\[ \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+{\frac{\partial}{\partial x}} & {\frac{\partial}{\partial y}} & {\frac{\partial}{\partial z}} \\
+ F_x & F_y & F_z \end{vmatrix}\]
+
+\[\left(\frac{\partial F_z}{\partial y}  - \frac{\partial F_y}{\partial z}\right) \mathbf{i} + \left(\frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x}\right) \mathbf{j} + \left(\frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y}\right) \mathbf{k}\]
+
+ %--------------------------------------------------%
+\section{Example}
+\[f(x,y,z)= \ 2x+3y^2-\sin(z)\]
+
+\[ \nabla f=
+\frac{\partial f}{\partial x} \mathbf{i} +
+\frac{\partial f}{\partial y} \mathbf{j} +
+\frac{\partial f}{\partial z} \mathbf{k}
+ = 2\mathbf{i}+ 6y\mathbf{j} -\cos(z)\mathbf{k}\]
+
+\section{Stoke's Theorem}
+\[
+\iint_{\Sigma} \nabla \times \mathbf{F} \cdot d\mathbf{\Sigma} = \oint_{\partial\Sigma} \mathbf{F} \cdot d \mathbf{r}, \]
+
+\section{Laplace Transforms }
+If $g(t)=k \times f(t)$ then $G(S) = k \times F(S)$ where $k$ is a
+constant. $\mathcal{f(t)}=F(S)$.
+\begin{eqnarray}
+f(t) &=& (t+1)^2\\
+&=& t^2 +2t +1 \nonumber
+\end{eqnarray}
+
+
+\section{Laplace Transforms Using 1st Shifting Theorem}
+\begin{eqnarray}
+ g(t) = e^{at}f(t) \quad \Leftrightarrow \quad G(S)= F(S-a) \nonumber
+\end{eqnarray}
+The function $g(t)$ is presented in a form whereby $a$ and $f(t)$
+are easily identifiable. First determine $F(S)$ by finding the
+Laplace transform of $f(t)$. Then replace all $S$ terms with
+$S-a$.
+
+\section{Laplace Transforms Using 2nd Shifting Theorem}
+
+\begin{eqnarray}
+ g(t) = u^{a}f(t-a) \quad \Leftrightarrow \quad G(S)= e^{-aS}F(S) \nonumber
+\end{eqnarray}
+The function $g(t)$ is presented in a form whereby $a$ and
+$f(t-a)$ are easily identifiable. ($U_{a}(t)$ is called the unit
+step function). First determine $f(t)$ by replace all $t-a$ terms
+in $f(t-a)$ with $t$. Then calculate the laplace transform of
+$f(t)$ i.e. $F(S)$. The solutions is in form $G(S)= e^{-aS}F(S)$.
+
+\section{Inverse Laplace Transforms (2 questions) }
+Partial fraction expansion is used in questions 4 and 5.
+\section{Inverse Laplace Transforms 2}
+
+The denominator has form $S^2 - 2aS + a^2 + k$ which is equivalent
+to $(S-a)^2 + k$. Therefore $G(S)$ will have form $F(S-a)$
+\newline
+The function $G(S)$ may have the form $\frac{S+D}{S^2 +(C+D)S +
+CD}$, where C and D are constants. This expression simplifies
+$\frac{S+D}{(S+C)(S+D)}$ and again to $\frac{1}{S+C}$. The inverse
+laplace transform $g(t)$ can be easily determined.
+\section{Convolution}
+We are asked to find a function h(t) which is the convolution of
+two given functions $f(t)$ and $g(t)$. i.e $h(t)=h*g(t)$.\newline
+Importantly $H(S) = F(S)\times G(S)$. We determine the laplace
+transforms, F(S) and G(S), and multiply them to determine H(S). We
+then find the inverse Laplace transform of H(S) to yield our
+solution.
+\subsection{Example}
+Find $h(t)$ when $h(t) = f*g(t)$, with $f(t)= e^{t}$ and $g(t)=
+e^{-t}$.\newline
+
+\begin{eqnarray}
+f(t) = e^{t} \quad \Leftrightarrow \quad F(S)= \frac{1}{S-1}
+ \nonumber\\
+g(t) = e^{-t} \quad \Leftrightarrow \quad G(S)= \frac{1}{S+1}
+ \nonumber\\
+H(S) = F(S)\times G(S) = \frac{1}{(S-1)(S+1)}
+ \nonumber
+\end{eqnarray}
+\subsection{Example}
+Find $h(t)$ when $h(t) = f*g(t)$, with $f(t)= t$ and $g(t)=
+t^2$.\newline
+
+\begin{eqnarray}
+f(t) = t \quad \Leftrightarrow \quad F(S)= \frac{1}{S^2}
+ \nonumber\\
+g(t) = t^2 \quad \Leftrightarrow \quad G(S)= \frac{2}{S^3}
+ \nonumber\\
+H(S) = F(S)\times G(S) = \frac{2}{S^5}
+ \nonumber\\
+(H(S) \mbox{ is in form }  k\frac{n!}{S^{n+1}} )
+ \nonumber
+\end{eqnarray}
+
+With $n=4$, $n!= 4! = 24$. Solving for $k$, $k \times n! = 2$.
+Therefore $k=\frac{1}{12}$. The solution is $\cal{L}^{-1}[H(S)]$
+
+%--------------------------------------------------%
+\newpage
+\subsection*{Laplace Transforms}
+
+\[ \mathcal{L}[f(t)] =  \int^{\infty}_0 f(t) e^{-st}dt \]
+
+\begin{eqnarray}
+\mathcal{L}[4] &=&  \int^{\infty}_0 t^2 e^{-st}dt \\
+&=&  4 \int^{\infty}_0 e^{-st}dt \\
+&=&  4 \left[ \frac{e^{-st}}{-s} \right]^{\infty}_0 \\
+&=&  4 \left[ \left(\frac{e^{-\infty}}{-s} \right) -  \left(\frac{e^{-0}}{-s} \right)\right]\\
+&=&  \frac{4}{s}
+\end{eqnarray}
+\subsection*{Fourier Series}
+
+\[ f(x) =  {a_o \over 2} + sum^{\infty}_1 \left( a_ncos(nx) + b_nsin(nx) \right) \]
+
+\[ a_0 = \int^{\pi}_{-\pi}f(x) dx  \]
+
+
+\subsection*{Fourier Series}
+
+\[ f(x) =  {a_o \over 2} + sum^{\infty}_1 \left( a_ncos(nx) + b_nsin(nx) \right) \]
+
+\[ b_n = {1 \over \pi}\int^{\pi}_{-\pi}f(x) sin(nx)dx  \]
+
+
+\[ b_n = {1 \over \pi} \left[\int^{0}_{-\pi}-\pi sin(nx)dx + \int^{\pi}_{0}\pi sin(nx)dx  \right] \]
+
+
+\[ b_n = {1 \over \pi}  \left( \left[ \frac{pi}{n}cos(nx) \right]^0_{-\pi} - \left[ \frac{pi}{n}cos(nx) \right]^{\pi}_0 \right) \]
+
+\[ b_n = {\pi \over n\pi} \left( cos(0) - cos(-n\pi) -  cos(n\pi) + cos(0) \right) \]
+
+\[b_n = { \pi \over n\pi} \left( 2 - 2cos(n\pi)  \right) \]
+
+%----------------------------------------%
+%--------------------------------------%
+\subsection*{Heaviside function}
+$u_1(t)$
+
+
+\[ \left[U_a(t)  - U_b(t) \right] \times f(t) \]
+
+\textbf{\emph{Special Cases:}}
+\begin{itemize}
+\item $U_0(t) = 1$
+\item $U_{\infty} = 0$
+\end{itemize}
+\section{Stoke's Theorem}
+\[
+\iint_{\Sigma} \nabla \times \mathbf{F} \cdot d\mathbf{\Sigma} = \oint_{\partial\Sigma} \mathbf{F} \cdot d \mathbf{r}, \]
+\section{Curl}
+In vector calculus, the curl is a vector operator that describes the infinitesimal rotation of a 3-dimensional vector field. At every point in the field, the curl of that field is represented by a vector. The attributes of this vector (length and direction) characterize the rotation at that point.
+%--------------------------------------------------%
+\section{Laplacian Operator}
+\[\Delta f = \nabla^2 f = \nabla \cdot \nabla f\]
+
+%--------------------------------------------------%
+\section{Notation}
+\[ \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+{\frac{\partial}{\partial x}} & {\frac{\partial}{\partial y}} & {\frac{\partial}{\partial z}} \\
+ F_x & F_y & F_z \end{vmatrix}\]
+
+\[\left(\frac{\partial F_z}{\partial y}  - \frac{\partial F_y}{\partial z}\right) \mathbf{i} + \left(\frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x}\right) \mathbf{j} + \left(\frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y}\right) \mathbf{k}\]
+
+ %--------------------------------------------------%
+\section{Example}
+\[f(x,y,z)= \ 2x+3y^2-\sin(z)\]
+
+\[ \nabla f=
+\frac{\partial f}{\partial x} \mathbf{i} +
+\frac{\partial f}{\partial y} \mathbf{j} +
+\frac{\partial f}{\partial z} \mathbf{k}
+ = 2\mathbf{i}+ 6y\mathbf{j} -\cos(z)\mathbf{k}\]
+
+
+
+%-------------------------------%
+\subsection*{Newton-Raphson Method}
+\[x_{1} = x_0 - \frac{f(x_0)}{f'(x_0)}\]
+\[x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \]
+\section{Laplace Transforms }
+If $g(t)=k \times f(t)$ then $G(S) = k \times F(S)$ where $k$ is a
+constant. $\mathcal{f(t)}=F(S)$.
+\begin{eqnarray}
+f(t) &=& (t+1)^2\\
+&=& t^2 +2t +1 \nonumber
+\end{eqnarray}
+
+%------------------------------------%
+
+\subsection*{Partial Fraction Expansion}
+\begin{itemize}
+\item Distinct Linear Factors
+\item Repeated Linear Factors
+\item Distinct Quadratic Factors
+\item Repeated Quadratic Factors
+\end{itemize}
+%--------------------------------------------------%
+\subsection*{Numerical Methods: Syllabus}
+\begin{itemize}
+\item Numerical Differentiation and Integration Approximation formulae for derivatives. Trapezoidal rule, Simpsons rule, Use of error estimates.
+\item Numerical Linear Algebra Linear least squares approximation. The above algorithms will be used to solve problems in mathematics and science using the Matlab and Derive computer packages.
+\item Solving Systems of Linear Equations Gaussian and Gauss/Jordan elimination, error accumulation, introduction to iterative techniques (Jacobi method). LU decomposition.
+\item Solution of Non-Linear Equations Bracketing methods, linear interpolation technique, fixed point iteration, the Newton-Raphson method. Error analysis of iterative methods.
+\item Mathematical Preliminaries Computer representation of numbers, types of computational error. Condition and stability of numerical algorithms.
+\item Interpolation Piecewise-linear interpolation and Lagrange interpolating polynomial.
+\end{itemize}
+
+\subsection*{The Secant method }
+
+Use the secant method to evaluate a root for each of the equations on Sheet 1, subject to
+the required accuracy restrictions. Compare the secant method with the previous methods
+in each case.
+
+%--------------------------------------------------%
+\subsection*{Conservative Vector Fields }
+A vector field A is called conservative if any of the following equivalent
+conditions holds
+\begin{itemize}
+\item The line integral of A between two points is independent of the path
+\item The line integral of A over any closed curve C is equal to zero, that is
+\end{itemize}
+
+%The curl of \textbf{A} is zero, i.e. $\del \times \textbf{A} =0$
+The exists a scalar field, called the potential, such that
+%\[\textbf{A} = \del \phi \]
+
+%--------------------------------------------------%
+\subsection*{The divergence theorem}
+
+%--------------------------------------------------%
+\subsection*{Stokes Theorem}
+
+The line integral of a vector A taken around a simple closed curve (that is,
+a non-intersecting closed curve), C, is equal to the surface integral of the
+curl of A taken over any surface S having C as a boundary.
+
+
+\end{document}
