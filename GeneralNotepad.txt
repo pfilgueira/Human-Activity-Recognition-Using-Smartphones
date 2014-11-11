@@ -127,21 +127,6 @@ Dendrograms are also known as ``Tree Diagrams".
 
 
 
-%------------------------------------------------%
-
-\section{Finite Population Correction Factor}
-Where the sample size exceeds $5\%$ of the population, the Finite Population Correction Factor should be applied. 
-\[ \sqrt{\frac{N-n}{N-1}} \]
-
-%------------------------------------------------%
-%\section{The Inverse Value Problem }
-
-%------------------------------------------------%
-%\section{Limits of Detection (Chemistry) }
-
-
-%------------------------------------------------%
-%\section{Multicollinearity}
 
 
 %------------------------------------------------%
@@ -184,22 +169,9 @@ Lower and Upper Specification Limits must be specified.
 \end{description}
 
 
-%------------------------------------------------%
-
-\section{Skewness: Pearson Coefficient of Skewness}
-
-\[S_k = \frac{3(\mbox{Mean} - \mbox{Median} )}{\sigma} \]
 
 
 
-%------------------------------------------------%
-
-\section{Spearman Rank Correlation}
- 
-\[ 1 - \frac{6\left( \sum d^2 + \frac{t^3-t}{12} \right)}{n(n^2-1)} \]
-
-The adjustment for tied values
-$ \frac{t^3-t}{12} $, where $t$ is the number of tied values
 
 
 %------------------------------------------------%
