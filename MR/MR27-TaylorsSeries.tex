@@ -1,8 +1,30 @@
 \begin{document}
 % http://www.math.hmc.edu/calculus/tutorials/taylors_thm/
-Taylor's Theorem
+
+%============================================================================================%
+\begin{frame}
+\frametitle{Taylor Series}
+\Large
+The Taylor series of a real or complex-valued function ƒ(x) that is infinitely differentiable at a real or complex number a is the power series
+ 
+which can be written in the more compact sigma notation as
+ 
+where n! denotes the factorial of n and ƒ (n)(a) denotes the nth derivative of ƒ evaluated at the point a. 
+
+The derivative of order zero of ƒ is defined to be ƒ itself and (x − a)0 and 0! are both defined to be 1. When a = 0, the series is also called a Maclaurin series.
+
+\end{frame}
+%============================================================================================%
+\begin{frame}
+\frametitle{Taylor Series}
+\Large
 Suppose we're working with a function f(x) that is continuous and has n+1 continuous derivatives on an interval about x=0. We can approximate f near 0 by a polynomial Pn(x) of degree n:
 
+\end{frame}
+%==================================================================================%
+\begin{frame}
+\frametitle{Taylor Series}
+\Large
 \begin{itemize}
 \item For n=0, the best constant approximation near 0 is
 P0(x)=f(0)
@@ -16,21 +38,26 @@ For n=2, the best quadratic approximation near 0 is
 P2(x)=f(0)+f(0)x+2!f(0)x2
 Note that P2, P2, and P2 match f, f, and f, respectively, at 0.
 Continuing this process,
-
+\end{frame}
+%============================================================================================%
+\begin{frame}
 Pn(x)=f(0)+f(0)x+2!f(x)x2++n!f(n)(0)xn
 
 This is the Taylor polynomial of degree n about 0 (also called the Maclaurin series of degree n). More generally, if f has n+1 continuous derivatives at x=a, the Taylor series of degree n about a is
 nk=0k!f(k)(a)(x−a)k=f(a)+f(a)(x−a)+2!f(a)(x−a)2++n!f(n)(a)(x−a)n 
 This formula approximates f(x) near a. Taylor's Theorem gives bounds for the error in this approximation:
 
-\section{Taylor's Theorem}
+\end{frame}
+%============================================================================================%
+\begin{frame}
+\frametitle{Taylor's Theorem}
 
 Suppose f has n+1 continuous derivatives on an open interval containing a. Then for each x in the interval,
 f(x)=nk=0k!f(k)(a)(x−a)k+Rn+1(x) 
 where the error term Rn+1(x) satisfies Rn+1(x)=f(n+1)(c)(n+1)!(x−a)n+1 for some c between a and x.
 
 This form for the error Rn+1(x), derived in 1797 by Joseph Lagrange, is called the Lagrange formula for the remainder. The infinite Taylor series converges to f,
-f(x)=k=0k!f(k)(a)(x−a)k 
+\[f(x)=k=0k!f(k)(a)(x−a)k \]
 if and only if limnRn(x)=0.
 \end{frame}
 %==================================================================================%
@@ -63,7 +90,11 @@ The Taylor Series in (x−a) is the unique power series in (x−a) converging to
 By Example 1,
 e−2x=1−2x+2x2−34x3+
 where we have substituted −2x for x. 
-
+\end{frame}
+%==================================================================================%
+\begin{frame}
+\frametitle{Taylor Series}
+\Large
 By Example 2, since ddx[ln(1+x)]=11+x, we can differentiate the Taylor series for ln(1+x) to obtain
 11+x=1−x+x2−x3+
 Substituting −x for x,
