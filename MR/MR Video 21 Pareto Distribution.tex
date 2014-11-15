@@ -1,0 +1,72 @@
+
+
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphics}
+
+\begin{document}
+%-------------------------------------------------- %
+\begin{frame}
+\bigskip
+{
+\Huge
+\[ \mbox{Financial Mathematics}  \]
+\huge
+\[ \mbox{The Pareto Distribution}  \]
+}
+
+{
+\LARGE
+\[ \mbox{www.Stats-Lab.com}  \]
+\[ \mbox{Twitter: @StatsLabDublin} \]
+}
+\end{frame}
+%-------------------------------------------------------- %
+\begin{frame}
+\frametitle{The Pareto Distribution}
+\Large
+
+Suppose the distribution of monthly salaries of full-time workers in the UK has
+a Pareto distribution with minimum monthly salary $x_m = 1000$ and concentration
+factor $\alpha = 3$. 
+
+\begin{enumerate}
+\item Calculate the mean monthly salary of UK full-time workers.
+\item Calculate the probability that a UK full-time worker earns more than 2000 per month.
+\item Calculate the median monthly salary of UK full-time workers.
+\end{enumerate}
+\end{frame}
+%-------------------------------------------------------- %
+
+\begin{frame}
+\frametitle{The Pareto Distribution}
+\Large
+\vspace{-2cm}
+The expected value of a random variable following a Pareto distribution is
+\[E(X)= \begin{cases} \infty & \text{if }\alpha\le 1, \\ \frac{\alpha x_\mathrm{m}}{\alpha-1} & \text{if }\alpha>1. \end{cases}
+\]
+\end{frame}
+%-------------------------------------------------------- %
+\begin{frame}
+\frametitle{The Pareto Distribution}
+\Large
+\vspace{-1.2cm}
+The cumulative distribution function of a Pareto random variable with parameters $\alpha$ and $x_m$ is
+\[
+F_X(x) = \begin{cases}
+1-\left(\frac{x_\mathrm{m}}{x}\right)^\alpha & \text{for } x \ge x_\mathrm{m}, \\
+0 & \text{for }x < x_\mathrm{m}.
+\end{cases}
+\]
+Using values for this example:
+\[
+F_X(x) = \begin{cases}
+1-\left(\frac{1000}{x}\right)^3 & \text{for } x \ge 1000, \\
+0 & \text{for }x < 1000.
+\end{cases}
+\]
+\end{frame}
+%-------------------------------------------------------- %
+\end{document}

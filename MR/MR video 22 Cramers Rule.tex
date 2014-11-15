@@ -1,0 +1,49 @@
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+
+\begin{frame}
+Solve the equations 
+2x--3y--1 = 0
+5x +2y --12 = 0 by
+Cramer’s rule.
+\end{frame}
+
+%------------------------------------------------%
+\begin{frame}
+\frametitle{Cramer's rule}
+
+
+Consider the linear system
+\[ \left\{\begin{matrix}ax+by&={\color{red}e}\\ cx + dy&= {\color{red}f}\end{matrix}\right.\  which in matrix format is \begin{bmatrix} a & b \\ c & d \end{bmatrix}\begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} {\color{red}e} \\ {\color{red}f} \end{bmatrix}.\]
+\end{frame}
+
+%------------------------------------------------%
+\begin{frame}
+\frametitle{Cramer's rule}
+Assume ad − bc nonzero. Then, x and y can be found with Cramer's rule as
+\[x = \begin{vmatrix} \color{red}{e} & b \\ \color{red}{f} & d \end{vmatrix}/\begin{vmatrix} a & b \\ c & d \end{vmatrix}  = { {\color{red}e}d - b{\color{red}f} \over ad - bc} \]
+and
+\[y = \begin{vmatrix} a & \color{red}{e} \\ c & \color{red}{f} \end{vmatrix}/\begin{vmatrix} a & b \\ c & d \end{vmatrix}  = { a{\color{red}f} - {\color{red}e}c \over ad - bc}.\]
+\end{frame}
+
+
+\begin{frame}
+\[ \epsilon = \frac{\operatorname d Q/Q}{\operatorname d P/P} \]
+
+
+
+ Revenue is simply the product of unit price times quantity:
+  \[﻿ \mbox{Revenue} = PQ_d﻿\]
+\end{frame}
+\end{document}
+
+Maths Resource
+
+http://www.csusm.edu/mathlab/documents/M132BusCalcFormulas%20r1-12e.pdf
+http://www.math.ubc.ca/~chau/elasticity.pdf
+http://www.textbooksonline.tn.nic.in/books/12/std12-bm-em-1.pdf

@@ -1,0 +1,60 @@
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+
+\begin{frame}
+\Large
+\[
+\mbox{The Sortino Ratio}
+\]
+\end{frame}
+
+\begin{frame}
+
+\frametitle{The Sortino Ratio}
+
+The Sortino Ratio measures the risk-adjusted return of an investment asset, 
+portfolio or strategy. It is a modification of the Sharpe ratio but penalizes only those returns falling below a user-specified target, or required rate of return, while the Sharpe ratio penalizes both upside and downside volatility equally. 
+\end{frame}
+
+\begin{frame}
+
+\frametitle{The Sortino Ratio}
+Though both ratios measure an investment's risk-adjusted returns, they do so in significantly different ways that will frequently lead to differing conclusions as to the true nature of the investment's return-generating efficiency. The ratio is calculated as:
+\[S = \frac{R-T}{DR},\]
+where 
+\begin{itemize}
+\item R is the asset or portfolio average realized return, 
+\item T is the target or required rate of return for the investment strategy 
+under consideration, (T was originally known as the minimum acceptable return, or MAR); 
+\item DR is the target semi-deviation given by
+\end{itemize}
+\end{frame}
+%---------------------------------------------------
+
+\begin{frame}
+
+\frametitle{The Sortino Ratio}
+The target semi-deviation is given by
+\[ DR = \left( \, \frac{1}{N} \, \sum_{k=1}^N (r_k - T)^2\,f(r_k)\, \right)^{1/2},\] 
+where
+T is a target rate of return $r_k$ is the $k^{th}$ returnf(r_k) = 1  if $r_k < T$ and 
+$f(r_k) = 0 $ if $r_k > T$
+
+This can be thought of as the root mean squared underperformance, where the underperformance is the amount by which a return is below target (and returns above target are treated as underperformance of 0).
+
+\end{frame}
+
+
+
+\end{document}
+
+Maths Resource
+
+http://www.csusm.edu/mathlab/documents/M132BusCalcFormulas%20r1-12e.pdf
+http://www.math.ubc.ca/~chau/elasticity.pdf
+http://www.textbooksonline.tn.nic.in/books/12/std12-bm-em-1.pdf
