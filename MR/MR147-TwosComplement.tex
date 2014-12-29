@@ -1,0 +1,33 @@
+TwosComplement
+
+Using two's complement to represent negative values has the benefit that subtraction and addition are the same. In your case, you can think of 12 - 7 as 12 + (-7). Hence you only need to find the two's complement representation of -7 and add it to +12:
+12  001100
+-7  111001   -- to get this, invert all bits of 7 (000111) and add 1
+----------
+ 5 1000101
+
+
+Then discard the carry (indicates overflow), and you have your result: 000101 which equals to 5 as expected.
+
+For your example of -15 + 2, simply follow the same procedure to get the two's complement representation of -15:
+15  001111
+    110000   -- inverted bits
+    110001   -- add 1
+
+
+Now do the addition as usual:
+-15  110001
+  2  000010
+-----------
+res  110011
+
+
+To see that res indeed equals -13, you can see that it is negative (MSB set). For the magnitude, convert to positive (invert bits, add 1):
+res  110011
+     001100  -- inverted bits
+     001101  -- add 1
+
+
+Hence the magnitude is 13 as expected.
+
+
