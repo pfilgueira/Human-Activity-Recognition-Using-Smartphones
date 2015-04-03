@@ -35,6 +35,40 @@ What is the probability that the second one is defective given that the first ch
 
 What is the probability that both chips are defective.
 
+
+H) Effective Interest Rates
+
+100 is subject to interest at 10% compounded quarterly. What is the accrued amount after one year?
+
+
+
+%==================================================================%
+Section G : counting Problems
+The Choose operator
+
+{n \choose k}  = {n! \over k! (n-k)!} 
+
+%==================================================================%
+\section*{Section H Introduction to Descriptive Statistics}
+G) Computing the Median of a data set
+Odd size or even size data set
+
+F) Characteristics of Data sets
+
+Range max and min
+in Order?
+
+J) Interquartile Range
+
+%==================================================================%
+Section J Bivariate Data 
+
+Correlation
+
+Slope / Intercept  Models 
+%===================================================================%
+% Section K Computing Confidence Intervals
+
 D) Confidence interval for a mean
 
 \bar{x}
@@ -57,21 +91,4 @@ Is the sample a large sample or small sample
 is n \leq 30 ? small
 is n > 30 large
 
-F) Characteristics of Data sets
 
-Range max and min
-in Order?
-
-G) Computing the Median of a data set
-Odd size or even size data set
-
-H) Effective Interest Rates
-
-100 is subject to interest at 10% compounded quarterly. What is the accrued amount after one year?
-
-
-I) The Choose operator
-
-{n \choose k}  = {n! \over k! (n-k)!} 
-
-J) Interquartile Range
