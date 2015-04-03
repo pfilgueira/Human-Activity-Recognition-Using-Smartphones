@@ -65,6 +65,12 @@ Section J Bivariate Data
 
 Correlation
 
+
+correlation coefficient must be between -1 and +1.
+
+also it has no units. Also it is not a proportion, so it shouldnt be expreszed as a percentage.
+
+
 Slope / Intercept  Models 
 %===================================================================%
 % Section K Computing Confidence Intervals
@@ -113,5 +119,22 @@ Is the procedure one tailed or two tailed? (k =1 or 2)
 
 Standard Error p(100-p)`n
 
+
+
+
+
+computing a v
+Threshold value
+alue based on a probability.
+D
+first we are hiven a probability vslue
+
+then we find the z value
+the 
+n we use the standardisation formula to compute the probability.
+
+
+
+the standard deviation is computed as follows.
 
 
