@@ -19,6 +19,121 @@ Venn Diagrams
 P(AB)  : Probability of A union B
  
  
+%================================================================================================================================================%
+Introductory Probability Notes
+ 
+
+Elementary properties of Probability
+Geometric Distribution
+ 
+Elementary properties of Probability
+ 
+  1. P(A) = 1 - P(A)
+2. P() = 0
+3. P(A)P(B)ifAB
+ 
+4. P(A) \leq 1
+5.
+P ( AandB) = P(A) +P(B) - P( AorB )
+ 
+6. If A_1, A_2, \ldots A_3  are n arebitary events in S then
+ 
+%----------------------------------------------------------------------%
+ 
+There are 3 persons in a room
+What is the probability that two people have the same birthday?
+For the sake of simplicity, exclude leap years.
+Outcomes =\{ (Jan 1, Jan 1, Jan 1), ( Jan 1, Jan 1, Jan 2), \ldots , (Dec 31, Dec 31, Dec 31) \}
+Number of outcomes = (365)^3.
+ 
+%----------------------------------------------------------------------%
+Geometric Distribution
+ 
+Conside the experiment of tossing a fair coin repeatedly and counting th number of tosses required until the first head appears.
+ 
+%----------------------------------------------------------------------%
+ 
+A binary source generates digits 1 and 0 with probability  0.6 and 0.4 respecitvely.
+ 
+What is the probability that two ones and three zeroes will occur in a five digit sequence?
+ 
+ 
+P(X = 2) =52(0.6)2(0.4)3= 200.350.0064 = 0.23
+ 
+A fair coin is flipped 10 times. Find the probability of 2,3 or 4 heads
+ 
+P(X=2)
+P(X=3)
+p(X=4)
+ 
+
+ 
+%--------------------------------------------------------------------------------------%
+
+Sample Space: This is the set of all possible outcomes of a random experiment, and is denoted $S$. An element in $S$ is called a sample point.
+Each outcome of a random experiment corresponds to a sample point.
+Find the sample space for the experiment of tossing a coin (a) one and (b) twice.
+(a) There are two possible outcomes: heads or tails.
+Thus
+S= {H,T}where $H$ and $T$ represent head and tail respectively.
+(b) There are four possible outcomes, which are pairs of heads and tails.
+Thus S= {HH,HT,TH,TT} 
+%--------------------------------------------------------------------------------------%
+Considering a coin toss experiment. A fair coin is tossed three times.
+Let X be the random variable that counts the number of heads in each sample point.
+P(X\leq 1)
+P(X\>1)
+p(0<X<3)
+Set of Eligible outcomes = \{1,2\}
+
+%--------------------------------------------------------------------------------------%
+
+A production line produces 1000-ohm resistors that have 10\% tolerance.
+Let $X$ denote the resistance of a resistor.
+Assuming that X is a normally distributed random variable with mean 1000 and variance 2500, find the probability that a randomly selected resistor will be rejected.
+Solution:
+Let A be the event that a resistor is rejected.
+P(A)  = P(X \leq 900) + P( X \geq 1100)
+P(X \leq 900)
+Z value
+Z_{900} = { 900 - 1000\over 50} = -2
+X_{1100} = { 1100 - 1000\over 50} = 2
+Probability of being rejected is 0.045 (i.e. 4.5 \%)
+
+%--------------------------------------------------------------------------------------%
+An information source generates symbols at random from a four letter alphabet {A,C,G,T} with the following probabilities
+P(a) = {1 \over 2}
+P(c) = {1 \over 4}
+P(g) = {1 \over 8}
+P(t) = {1 \over 8}
+a coding scheme encodes these symbols into binary code as follows
+a 0
+c 10
+g 110
+t 111
+Let X be the random variable denoting the lenght of the code, i.e. the number of bits.
+(a) What is the range of X?
+The outcome with the shortest possible length is $AAAA$, which contains 4 bits.
+The outcomes with the longest possible lenght would contain 12 bits.
+ 
+
+%--------------------------------------------------------------------------------------%
+A Bernouilli experiment is a random experiment, the outcome of which can be classified in but one of two mutually exclusive and exhaustive ways, say "success" or "failure".
+
+A sequence of Bernouillli trials occurs when a Bernouilli experiment is repeated several times, and the outcome of each successive experiment is independent of the last.
+
+The distribution function F_X(x) = P(X \leq x) where $-< x$
+%--------------------------------------------------------------------------------------%
+Discrete Random Variables
+Let X be a random variable with a finite of countably infinite number of points.
+%--------------------------------------------------------------------------------------%
+
+Uniform distribution
+A random variable is called a uniform random variable the interval (a,b) if its probability density function is given
+
+f_X(x) = \begin{cases}  {1 \over b-a } \\ 0 \end{cases}
+%--------------------------------------------------------------------------------------%
+
 
 
 MathsCast C3 : Conditional Probability
