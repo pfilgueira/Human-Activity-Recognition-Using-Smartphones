@@ -1,3 +1,34 @@
+MathsCast Series C : Probability
+ 
+
+MathsCast C1 : Sample Spaces
+MathsCast C2 : Union, Intersection and Complement
+MathsCast C3 : Conditional Probability
+MathsCast C4 : Bayes Theorem
+ 
+MathsCast C1 : Sample Spaces
+What is a sample space?
+What is a random experiment?
+ 
+Simple example 1 : A Coin is tossed one time
+Simple example 2 : A Coin is tossed twice
+Simple example 3 : A dice is thrown once
+Simple example 4 : A Dice is thrown twice  
+MathsCast C2 : Union, Intersection and Complement
+Venn Diagrams
+P(AB)  : Probability of A union B
+ 
+ 
+
+
+MathsCast C3 : Conditional Probability
+    P(A | B)  : Probability of A given that event B has happened.
+ 
+MathsCast C4 : Bayes Theorem
+MathsCast C5 : Random Variable
+What is a random variable? 
+ 
+ 
 A. Continuous Interest
 
 A principal of €3,500 is invested with interest compounded continuously.
@@ -72,6 +103,87 @@ also it has no units. Also it is not a proportion, so it shouldnt be expreszed a
 
 
 Slope / Intercept  Models 
+
+%==================================================================================================================================================================================%
+Normal Distribution
+1 Worked Examples
+Question 4.
+Question 5.
+Normal Distribution
+Example
+
+A standard Z table can be used to find probabilities for any normal curve problem that has been converted to Z scores. For the table, refer to the text. The Z distribution is a normal distribution with a mean of 0 and a standard deviation of 1.
+The following steps are helpfull when working with the normal curve problems:
+1. Graph the normal distribution, and shade the area related to the probability you want to find.
+2. Convert the boundaries of the shaded area from X values to the standard normal random variable Z values using the Z formula above.
+3. Use the standard Z table to find the probabilities or the areas related to the Z values in step 2.
+ 
+Problem One:
+ 
+A survey showed that salaries for accountants with six to nine years experience are normally distributed with a mean of € 48,000 and a standard deviation of € 4000. What is the probability that an accountant earns:
+ 
+More than €52,000?                                                            
+More than €45,500?
+Between €45,500 and €52,000?   
+
+1 Worked Examples
+ 
+Problem Two:
+
+Graduate Management Aptitude Test (GMAT) scores are widely used by graduate schools of business as an entrance requirement. Suppose that in one particular year, the mean score for the GMAT was 476, with a standard deviation of 107. Assuming that the GMAT scores are normally distributed, answer the following questions:The following figure shows a graphic representation of this problem.
+
+
+
+
+Question 1. What is the probability that a randomly selected score from this GMAT falls between 476 and 650?
+
+ 
+Applying the Z equation, we get: Z = (650 - 476)/107 = 1.62. The Z value of 1.62 indicates that the GMAT score of 650 is 1.62 standard deviation above the mean. The standard normal table gives the probability of value falling between 650 and the mean. The whole number and tenths place portion of the Z score appear in the first column of the table. Across the top of the table are the values of the hundredths place portion of the Z score. Thus the answer is that 0.4474 or 44.74% of the scores on the GMAT fall between a score of 650 and 476.
+
+Problem Three
+ 
+What is the probability of receiving a score greater than 750 on a GMAT test that has a mean of 476 and a standard deviation of 107?
+ 
+ 
+ 
+
+ 
+This problem is asking for determining the area of the upper tail of the distribution. The Z score is: Z = ( 750 - 476)/107 = 2.56. From the table, the probability for this Z score is 0.4948. This is the probability of a GMAT with a score between 476 and 750. The rule is that when we want to find the probability in either tail, we must substract the table value from 0.50. Thus, the answer to this problem is: 0.5 - 0.4948 = 0.0052 or 0.52%. Note that P(X >= 750) is the same as P(X >750), because, in continuous distribution, the area under an exact number such as X=750 is zero. The following figure shows a graphic representation of this problem.
+ 
+Question 4.
+What is the probability of receiving a score of 540 or less on a GMAT test that has a mean of 476 and a standard deviation of 107? i.e., P(X <= 540)="?." we are asked to determine the area under the curve for all values less than or equal to 540. the z score is: z="(540" 476)/107="0.6." from the table, the probability for this z score is 0.2257 which is the probability of getting a score between the mean (476) and 540. the rule is that when we want to find the probability between two values of x on either side of the mean, we just add the two areas together. Thus, the answer to this problem is: 0.5 + 0.2257 = 0.73 or 73%. The following figure shows a graphic representation of this problem.
+
+Figure 6
+Question 5.
+ What is the probability of receiving a score between 440 and 330 on a GMAT test that has a mean of 476 and a standard deviation of 107? i.e., P(330 < 440)="?." the solution to this problem involves determining the area of the shaded slice in the lower half of the curve in the following figure.
+
+Figure 7
+In this problem, the two values fall on the same side of the mean. The Z scores are: Z1 = (330 - 476)/107 = -1.36, and Z2 = (440 - 476)/107 = -0.34. The probability associated with Z = -1.36 is 0.4131, and the probability associated with Z = -0.34 is 0.1331. The rule is that when we want to find the probability between two values of X on one side of the mean, we just subtract the smaller area from the larger area to get the probability between the two values. Thus, the answer to this problem is: 0.4131 - 0.1331 = 0.28 or 28%.
+
+Example Two:
+
+Suppose that a tire factory wants to set a mileage guarantee on its new model called LA 50 tire. Life tests indicated that the mean mileage is 47,900, and standard deviation of the normally distributed distribution of mileage is 2,050 miles. The factory wants to set the guaranteed mileage so that no more than 5% of the tires will have to be replaced. What guaranteed mileage should the factory announce? i.e., P(X <= ?)="5%.<br"> In this problem, the mean and standard deviation are given, but X and Z are unknown. The problem is to solve for an X value that has 5% or 0.05 of the X values less than that value. If 0.05 of the values are less than X, then 0.45 lie between X and the mean (0.5 - 0.05), see the following graph.
+
+Figure 8
+
+Refer to the standard normal distribution table and search the body of the table for 0.45. Since the exact number is not found in the table, search for the closest number to 0.45. There are two values equidistant from 0.45-- 0.4505 and 0.4495. Move to the left from these values, and read the Z scores in the margin, which are: 1.65 and 1.64. Take the average of these two Z scores, i.e., (1.65 + 1.64)/2 = 1.645. Plug this number and the values of the mean and the standard deviation into the Z equation, you get:
+Z =(X - mean)/standard deviation or -1.645 =(X - 47,900)/2,050 = 44,528 miles.
+Thus, the factory should set the guaranteed mileage at 44,528 miles if the objective is not to replace more than 5% of the tires.
+
+The Normal Approximation to the Binomial Distribution:
+
+In lecture note number 5 we talked about the binomial probability distribution, which is a discrete distribution. You remember that we said as sample sizes get larger, binomial distribution approach the normal distribution in shape regardless of the value of p (probability of success). For large sample values, the binomial distribution is cumbersome to analyze without a computer. Fortunately, the normal distribution is a good approximation for binomial distribution problems for large values of n. The commonly accepted guidelines for using the normal approximation to the binomial probability distribution is when (n x p) and [n(1 - p)] are both greater than 5.
+
+Example:
+
+Suppose that the management of a restaurant claimed that 70% of their customers returned for another meal. In a week in which 80 new (first-time) customers dined at the restaurant, what is the probability that 60 or more of the customers will return for another meal?, ie., P(X >= 60) =?.
+
+The solution to this problem can can be illustrated as follows:
+First, the two guidelines that (n x p) and [n(1 - p)] should be greater than 5 are satisfied: (n x p) = (80 x 0.70) = 56 > 5, and [n(1 - p)] = 80(1 - 0.70) = 24 > 5. Second, we need to find the mean and the standard deviation of the binomial distribution. The mean is equal to (n x p) = (80 x 0.70) = 56 and standard deviation is square root of [(n x p)(1 - p)], i.e., square root of 16.8, which is equal to 4.0988. Using the Z equation we get, Z = (X - mean)/standard deviation = (59.5 - 56)/4.0988 = 0.85. From the table, the probability for this Z score is 0.3023 which is the probability between the mean (56) and 60. We must substract this table value 0.3023 from 0.5 in order to get the answer, i.e., P(X >= 60) = 0.5 -0.3023 = 0.1977. Therefore, the probability is 19.77% that 60 or more of the 80 first-time customers will return to the restaurant for another meal. See the following graph.
+
+Figure 9
+
+
 %===================================================================%
 % Section K Computing Confidence Intervals
 
@@ -136,5 +248,75 @@ n we use the standardisation formula to compute the probability.
 
 
 the standard deviation is computed as follows.
+
+
+Tutorial Sheet 4.3
+A sample of 300 households in a large town revealed that 183 have home computers.
+Construct a 95% confidence interval for the proportion of households with home computers in the whole town.
+ 
+Sample size:         n =300 :  ( N.B. Large sample)
+ 
+Estimate:             Sample proportion   
+ 
+    (N.B. Percentages are easier to work with.)
+ 
+t-value:           95% confidence , therefore  = 0.05
+                      two tailed procedure, therefore k = 2
+                      therefore column to use = 0.025
+ 
+                      Large sample:  degrees of freedom =  i.e. bottom row
+ 
+                      therefore t-value is 1.96                   
+ 
+ 
+Standard Error:  from Formulae     p(1-p)n       =61 \times 39}{300}        = 2.81%
+ 
+ 
+Confidence Interval : estimate(t-valuestd. error)
+ 
+                            61%(1.962.81%) = 
+ 
+
+
+
+Question 4.4 The average height of 100 Irish students was 1.72m and the variance 0.0144m2.
+ 
+Calculate 95% and 99% confidence intervals for the average height of the population of Irish students.
+ 
+Variance :  0.0144m2.    Standard deviation is therefore 0.12m
+estimate : sample mean  1.72m
+sample size : 100  (large sample)
+ 
+t-values:   
+   95% confidence
+   significance = 0.05
+   two tailed procedure, therefore k = 2
+   therefore column to use = 0.025
+ 
+   Large sample
+   degrees of freedom =  i.e. bottom row
+ 
+  therefore t-value is 1.96
+       99% confidence ,
+       therefore  = 0.01
+       two tailed procedure, therefore k = 2
+       therefore column to use = 0.005
+ 
+       Large sample
+       degrees of freedom =  i.e. bottom row
+ 
+       therefore t-value is 2.576
+                      
+
+Standard Error (from Formulae)     sn        =0.12100       =0.012m
+95% Confidence Interval : estimate(t-valuestd. error)
+ 
+                            1.72(1.960.012) =
+ 
+
+99% Confidence Interval : estimate(t-valuestd. error)
+ 
+                            1.72(2.5760.012) =
+
 
 
