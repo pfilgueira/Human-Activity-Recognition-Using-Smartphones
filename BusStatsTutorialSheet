@@ -92,3 +92,26 @@ is n \leq 30 ? small
 is n > 30 large
 
 
+Confidence intervals
+point estimate 
+sample mean
+sample proportion
+difference of two sample means
+hypothesis testing
+1 Write out null and alternative hypothesis
+2 Compute test statistic 
+	First need to compute the standard error.
+3 Determine the quantile for critical value
+4 Decision rule 
+Important Considerations
+Is the sample a small sample or large sample?
+	Threshold n=30
+		Small sample - use the student t distribution
+		Large sample - use standard normal distribution
+What is the significance level ? 
+Is the procedure one tailed or two tailed? (k =1 or 2)
+
+Standard Error p(100-p)`n
+
+
+
