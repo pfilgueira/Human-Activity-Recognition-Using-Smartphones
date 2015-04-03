@@ -19,6 +19,52 @@ Venn Diagrams
 P(AB)  : Probability of A union B
 
 
+MA4004 Spring 2009
+
+Spring 2009 Q3a
+
+
+Spring 2009 Question 3b
+
+99% Confidence Interval
+
+
+Degrees of freedom ()
+Degrees of freedom depends on the sample size (n).
+
+Sample size (n)
+
+If the sample size is less than or equal to 30, it is considered a small sample.(= n-1)
+If the sample size is larger than 30, it is considered a large sample.(=)
+
+Significance ()
+
+Number of tails (k)
+
+Hypothesis tests can either be one tailed or two tailed.
+Confidence intervals are always two tailed procedures.
+
+
+Murdoch Barnes table 4
+
+Column (/k )
+Row : = n-1(small samples) or(large samples)
+
+
+Spring 2009 Question 4a
+
+Spring 2009 Question 4b - Inference
+
+
+
+Spring 2009 Question 5a - Chi Square Testing
+
+
+
+
+
+Spring 2009 Question 5b - Simple Linear Regression
+
 
 
 Categorical vs. Quantitative Variables
