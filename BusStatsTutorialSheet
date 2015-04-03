@@ -1,0 +1,77 @@
+A. Continuous Interest
+
+A principal of €3,500 is invested with interest compounded continuously.
+What is the required interest rate if the investment is to grow to \euro 6,250 after 5
+years?
+
+B) Histograms
+
+(4 marks) Comment on the shape of the histogram. Based on the shape of the
+histogram, what is the best measure of centrality and variability
+
+Two types of histogram
+
+Skewed
+Symmetric
+
+Median and Interquartile Range
+Mean and Standard deviation ( or Variance)
+
+
+C) Sampling without replacement
+
+A lot of semiconductor chips contains 20 that are defective.
+
+Two chips are selected at random, without replacement from the lot.
+
+
+What is the probability that the first one is defective?
+
+What is the probability that the second one is defective given that the first one was defective?
+
+Independent events
+
+What is the probability that the second one is defective given that the first chip was not defective?
+
+What is the probability that both chips are defective.
+
+D) Confidence interval for a mean
+
+\bar{x}
+
+Quantile
+
+s sample standard deviation
+
+sample size 
+
+standard error  \frac{s}{\sqrt{n}}
+
+
+
+E) Quantiles computing Confidence intervals
+
+Is the variance known?
+Is the sample a large sample or small sample
+
+is n \leq 30 ? small
+is n > 30 large
+
+F) Characteristics of Data sets
+
+Range max and min
+in Order?
+
+G) Computing the Median of a data set
+Odd size or even size data set
+
+H) Effective Interest Rates
+
+100 is subject to interest at 10% compounded quarterly. What is the accrued amount after one year?
+
+
+I) The Choose operator
+
+{n \choose k}  = {n! \over k! (n-k)!} 
+
+J) Interquartile Range
