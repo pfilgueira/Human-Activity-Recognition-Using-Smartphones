@@ -1,17 +1,17 @@
 Human Activity Recognition Using Smartphones
 ========================================================
 
-#### Introduction
+### Introduction
 
 This repository is hosting the R code for the assignment of the DataScience track's "Getting and Cleaning Data" course which will be peer assessed.
 
 The purpose of this project is to demonstrate the collection, work with, and cleaning of this data set. Tidy data have been prepared so can be used for later analysis.
 
-#### Data Set
+### Data Set
 
 The data set ***"Human Activity Recognition Using Smartphones"*** has been taken from UCI Website. [UCI](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
-#### Execution and files
+### Execution and files
 
 The Data Set has been stored in `UCI HAR Dataset/` directory.
 
