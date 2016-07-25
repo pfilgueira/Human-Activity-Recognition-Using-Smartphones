@@ -11,14 +11,27 @@ The purpose of this project is to demonstrate the collection, work with, and cle
 
 ### Data Set
 
-The data set ***"Human Activity Recognition Using Smartphones"*** has been taken from UCI Website. [UCI](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+The data set ***"Human Activity Recognition Using Smartphones"*** has been taken from UCI Website  (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
-### Execution and files
-
-The Data Set has been stored in `UCI HAR Dataset/` directory.
+### Codebook
 
 The `CodeBook.md` describes the variables, the data, and the work that has been performed to clean up the data.
 
-The `run_analysis.R` is the script that has been used for this work. It can be loaded in R/Rstudio and executed without any parameters.
+### Execution and files
 
-The result of the execution is that a `tidy.csv` file is being created, that stores the data (mean and standard deviation of each measurement per activity&subject) for later analysis.
+The `run_analysis.R` is the script that has been used for this work. It can be loaded in R/Rstudio and executed without any parameters. Running `run_analysis.R` file performs a number of operations:
+
+* Downloads and extracts data from UCI Website
+* Merges the training and the test sets to create one data set.
+* Extracts only the measurements on the mean and standard deviation for each measurement.
+* Adds descriptive activity names to name the activities in the data set
+* Adds descriptive variable names to the data set
+* The result of the execution is that a `tidy.csv` file is being created, that stores the data (mean and standard deviation of each measurement per activity&subject) for later analysis.
+
+
+
+
+
+
+
+
